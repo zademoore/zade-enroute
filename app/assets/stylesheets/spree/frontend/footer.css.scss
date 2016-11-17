@@ -1,0 +1,49 @@
+section.footer {
+    background-color: #000;
+    color: #fff;
+    height: 180px;
+    margin-bottom: 0;
+    font-size: 14px;
+    padding-top: 0.3em;
+}
+
+.foot {
+    width: 33.333%;
+}
+
+.foot-logo {
+    height: 4em;
+}
+
+.copy-foot {
+    text-align: right;
+}
+
+.copy-foot a {
+    position: relative;
+    top: 1.6em;
+}
+
+.copy-foot p {
+    position: relative;
+    right: -11px;
+    top: -26px;
+    font-size: .6em;
+}
+
+ul.foot-social {
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.foot-social li {
+    display: inline-block;
+    margin: 0 1.6em;
+}
+
+.foot-social li a i {
+    font-size: 1.5em;
+}

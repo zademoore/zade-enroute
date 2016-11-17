@@ -1,0 +1,147 @@
+
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-size: 21px;
+    font-family: Montserrat;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    color: #000;
+    overflow-x: hidden;
+}
+
+div {
+    display: inline-block;
+}
+
+.wrapper {
+    overflow-x: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.rapper {
+    display: block;
+    width: 58%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: League Spartan;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 360%;
+    margin-bottom: .5em;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 180%;
+    letter-spacing: .075em;
+    margin-bottom: 1em;
+}
+
+// .transparent {
+//     color: rgba(255, 255, 255, 0.60);
+// }
+
+p {
+    line-height: 40px;
+}
+
+li { list-style: none; }
+
+a { 
+    text-decoration: none; 
+    color: #000;
+}
+
+// .btn {
+//     color: #fff;
+//     text-transform: uppercase;
+//     letter-spacing: 0.2em;
+//     padding: 1em;
+//     background-color: rgba(133, 133, 133, 0.2);
+//     border: 1px solid #fff;
+//     font-size: 100%;
+//     width: auto;
+//     cursor: pointer;
+// }
+
+
+section {
+    margin-bottom: 9em;
+    position: relative;
+}
+
+section:before {
+    position: absolute;
+    content: "";
+}
+
+section.header {
+    padding-top: 6em;
+    padding-bottom: 5em;
+    background: image-url('sts-001.jpg') center 39% no-repeat fixed;
+    background-size: cover;
+    color: #fff;
+    margin-bottom: 3em;
+}
+
+.diag {
+    z-index: 1;
+    padding: 3em;
+}
+
+
+.diag:before {
+    -ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+    left: -2em;
+    background: inherit;
+    height: 100px;
+    width: 130%;
+    top: -2em;
+    z-index: -1;
+}
+
+.elastagirl {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
