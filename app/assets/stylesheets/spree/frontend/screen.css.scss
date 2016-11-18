@@ -123,12 +123,18 @@ section.header {
     -ms-transform: rotate(2deg);
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
-    left: -2em;
+    left: -3em;
     background: inherit;
     height: 100px;
     width: 130%;
     top: -2em;
     z-index: -1;
+}
+
+.diag.slope-right:before {
+    -ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
 }
 
 .elastagirl {
