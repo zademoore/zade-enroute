@@ -29,8 +29,7 @@ Spree.config do |config|
 
   # Custom logo for the frontend
   config.logo = "logo/Zadé-00.svg"
-  
-  config.logow = "logo/Zadé-001.svg"
+
 
   # Template to use when rendering layout
   # config.layout = "spree/layouts/spree_application"
