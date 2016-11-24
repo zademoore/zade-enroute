@@ -25,10 +25,10 @@
   <ul id="products" class="inline product-listing" data-hook>
     <% products.each do |product| %>
       <% url = spree.product_path(product, taxon_id: @taxon.try(:id)) %>
-      <li id="product_<%= product.id %>" class="le-produit" style="background-image: url(<%= product.display_image.attachment(:large) %>)">
+      <li id="product_<%= product.id %>" class="le-produit">
           <%= link_to product, class: 'produit-link' do %>
             <% cache(@taxon.present? ? [I18n.locale, current_pricing_options, @taxon, product] : [I18n.locale, current_pricing_options, product]) do %>
-            <!--<%= link_to image_tag(product.display_image.attachment(:small), itemprop: "image"), url, itemprop: 'url' %>-->
+            <%= link_to image_tag(product.display_image.attachment(:large), itemprop: "image"), url, itemprop: 'url' %>
               <%= link_to truncate(product.name, length: 50), url, class: 'info', itemprop: "name", title: product.name %>
               <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                 <span class="price selling" itemprop="price"><%= display_price(product) %></span>
