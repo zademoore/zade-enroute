@@ -8,7 +8,18 @@
                     <%= logo %>
                 </div>
             </li>
-            <li><%= link_to 'shop', products_path %></li>
+            <li>
+                <%= link_to 'shop', products_path %>
+                <ul class="aisles">
+                    <% @taxonomies.each do |taxonomy| %>
+                        <li>
+                           <%= taxonomy.name %> 
+                           <%= shop_tree(taxonomy.root, @taxon, 1) %> 
+                        </li>
+                    <% end %>
+                </ul>
+            
+            </li>
             <li>look-book</li>
         </ul>
     </div>
