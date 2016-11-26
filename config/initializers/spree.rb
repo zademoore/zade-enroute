@@ -32,7 +32,7 @@ Spree.config do |config|
 
 
   # Template to use when rendering layout
-  # config.layout = "spree/layouts/spree_application"
+  config.layout = "layouts/application"
 
 
   # Admin:
