@@ -37,6 +37,14 @@ div.nav-list {
     margin-top: 0.85em;
 }
 
+.nav-links li > ul {
+    display: none;
+}
+
+.nav-links li:hover > ul {
+    display: block;
+}
+
 li.logoli {
     margin-top: 0;
 }
