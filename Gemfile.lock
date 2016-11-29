@@ -98,6 +98,8 @@ GEM
     ffi (1.9.14)
     font-awesome-rails (4.7.0.0)
       railties (>= 3.2, < 5.1)
+    font-awesome-sass (4.6.2)
+      sass (>= 3.2)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
     globalid (0.3.7)
@@ -338,6 +340,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
+  font-awesome-sass (~> 4.6.2)
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
