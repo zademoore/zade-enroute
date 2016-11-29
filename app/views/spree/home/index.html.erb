@@ -1,6 +1,12 @@
-<section class="domicile">
-        
-</section>
-<section class="récit diag slope-right">
-    
+<%= render :partial => 'spree/shared/header' %>
+<% content_for :sidebar do %>
+  <div data-hook="homepage_sidebar_navigation">
+    <%= render :partial => 'spree/shared/taxonomies' %>
+  </div>
+<% end %>
+
+<section data-hook="homepage_products" class="diag slope-right clearfix">
+  <% cache(cache_key_for_products) do %>
+    <%= render :partial => 'spree/shared/products', :locals => { :products => @products } %>
+  <% end %>
 </section>

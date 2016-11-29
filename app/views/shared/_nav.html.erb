@@ -1,7 +1,7 @@
 <nav class="top">
     <div class="nav-list rapper">
         <ul class="nav-links">
-            <li>about</li>
+            <li><%= link_to 'about', main_app.about_index_path %></li>
             <li>blog</li>
             <li class="logoli">
                 <div class="top-logo">
@@ -9,7 +9,7 @@
                 </div>
             </li>
             <li>
-                <%= link_to 'shop', products_path %>
+                <%= link_to 'shop', spree.root_path %>
                 <ul class="aisles">
                     <% @taxonomies.each do |taxonomy| %>
                         <li>
@@ -20,7 +20,7 @@
                 </ul>
             
             </li>
-            <li>look-book</li>
+            <li><%= link_to 'lookbook', main_app.lookbook_index_path %></li>
         </ul>
     </div>
 </nav>

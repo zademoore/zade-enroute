@@ -1,4 +1,8 @@
 module Spree::BaseHelper  
+  
+    def logo(image_path = Spree::Config[:logo])
+      link_to image_tag(image_path), root_path
+    end
     
     def shop_tree(root_taxon, current_taxon, max_level = 1)
       return '' if max_level < 1 || root_taxon.children.empty?
