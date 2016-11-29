@@ -23,4 +23,13 @@
             <li><%= link_to 'lookbook', main_app.lookbook_index_path %></li>
         </ul>
     </div>
+    <ul class="cart">
+        <li id="link-to-cart" data-hook>
+            <noscript>
+                <%= link_to Spree.t(:cart), '/cart' %>
+            </noscript>
+            &nbsp;
+        </li>
+        <script>Spree.fetch_cart('<%= j spree.cart_link_url %>')</script>
+    </ul>
 </nav>
