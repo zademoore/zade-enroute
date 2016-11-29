@@ -121,9 +121,9 @@ section.header {
 
 
 .diag:before {
-    -ms-transform: rotate(2deg);
-    -webkit-transform: rotate(2deg);
-    transform: rotate(2deg);
+    -ms-transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
     left: -3em;
     background: inherit;
     height: 100px;
@@ -133,9 +133,21 @@ section.header {
 }
 
 .diag.slope-right:before {
-    -ms-transform: rotate(-2deg);
-    -webkit-transform: rotate(-2deg);
-    transform: rotate(-2deg);
+    -ms-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+}
+
+section.diag h1 {
+    position: absolute;
+    top: -1.45em;
+    color: #fff;
+    font-size: 404%;
+    left: 1em;
+}
+
+section.diag.slope-right h1 {
+    top: -1.2em;
 }
 
 .elastagirl {

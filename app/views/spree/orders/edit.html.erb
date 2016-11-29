@@ -1,7 +1,7 @@
 <% @body_id = 'cart' %>
 <%= render :partial => 'spree/shared/header' %>
 <section data-hook="cart_container" class="diag">
-  <h1><%= Spree.t(:shopping_cart) %></h1>
+  <h1>Your Cart</h1>
 
   <% if @order.line_items.empty? %>
 

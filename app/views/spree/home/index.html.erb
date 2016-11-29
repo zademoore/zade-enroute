@@ -5,7 +5,8 @@
   </div>
 <% end %>
 
-<section data-hook="homepage_products" class="diag slope-right clearfix">
+<section data-hook="homepage_products" class="diag clearfix">
+  <h1>Shop</h1>
   <% cache(cache_key_for_products) do %>
     <%= render :partial => 'spree/shared/products', :locals => { :products => @products } %>
   <% end %>
