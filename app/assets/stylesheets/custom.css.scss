@@ -25,8 +25,9 @@ body {
     font-family: Montserrat;
     font-weight: 300;
     letter-spacing: 0.04em;
-    color: #000;
+    color: #333;
     overflow-x: hidden;
+    background-color: #F7F7F7;
 }
 
 div {
@@ -97,7 +98,7 @@ a {
 section {
     margin-bottom: 9em;
     position: relative;
-    background-color: #fff;
+    background-color: inherit;
 }
 
 section:before {
@@ -110,7 +111,6 @@ section.header {
     padding-bottom: 5em;
     background: image-url('sts-001.jpg') center 39% no-repeat fixed;
     background-size: cover;
-    color: #fff;
     margin-bottom: 3em;
 }
 
@@ -141,7 +141,7 @@ section.header {
 section.diag h1 {
     position: absolute;
     top: -1.45em;
-    color: #fff;
+    color: #F7F7F7;
     font-size: 404%;
     left: 1em;
 }

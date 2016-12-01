@@ -2,12 +2,12 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 52px;
+    height: 48px;
     z-index: 999;
     font-size: 0.7em;
     text-transform: uppercase;
     letter-spacing: 4px;
-    background-color: #e0e0e0;
+    background-color: #F7F7F7;
     color: #000;
     font-weight: 700;
 }
@@ -36,27 +36,65 @@ div.nav-list {
     text-align: center;
     float: left;
     width: 20%;
-    margin-top: 1em;
 }
 
-.nav-links li > ul {
-    display: none;
-}
-
-.nav-links li:hover > ul {
+.nav-links li a {
+    padding: 1em;
     display: block;
 }
 
-li.logoli {
-    margin-top: 0;
+.nav-links li > ul.aisles {
+    display: none;
+}
+
+.nav-links li:hover > ul.aisles {
+    display: block;
+}
+
+li.logoli a {
+    padding: 0;
 }
 
 ul.aisles li {
     width: 100%;
+    margin-top: 0;
 }
 
 ul.taxons-list li {
     display: block;
     text-align: left;
-    padding: 0 1em;
+}
+
+.taxons-list a {
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 1em;
+    background: #F7F7F7;
+}
+
+.taxons-list a:hover {
+    background: #e0e0e0;
+}
+
+.nav-links li a:after{
+    content: '';
+    display: none;
+    height: 2px;
+    width: 70%;
+    background: #333;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-links li a:hover:after {
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-links li.logoli a:hover:after,
+.taxons-list li a:hover:after{
+    display: none;
 }

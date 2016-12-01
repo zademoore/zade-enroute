@@ -13,7 +13,7 @@
                 <ul class="aisles">
                     <% @taxonomies.each do |taxonomy| %>
                         <li>
-                           <%= taxonomy.name %> 
+                           <!--<%= taxonomy.name %> -->
                            <%= shop_tree(taxonomy.root, @taxon, 1) %> 
                         </li>
                     <% end %>
