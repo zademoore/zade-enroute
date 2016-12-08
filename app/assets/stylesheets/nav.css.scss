@@ -77,21 +77,30 @@ ul.taxons-list li {
     background: #e0e0e0;
 }
 
+.nav-links li a,
+.nav-links li a:after
+{
+    transition: all .35s ease-in-out;
+    webkit-transition: all .35s ease-in-out; /* Safari 3.1 to 6.0 */
+}
+
 .nav-links li a:after{
     content: '';
-    display: none;
+    display: block;
     height: 2px;
     width: 70%;
-    background: #333;
+    background: transparent;
     position: absolute;
     bottom: -1px;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin: 0 auto;
 }
 
-.nav-links li a:hover:after {
-    display: block;
-    margin: 0 auto;
+.nav-links li a:hover:after,
+.nav-links li a:active:after {
+    background: #000;
+    
 }
 
 .nav-links li.logoli a:hover:after,

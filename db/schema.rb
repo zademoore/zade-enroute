@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161126015123) do
+ActiveRecord::Schema.define(version: 20161203044825) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -1167,6 +1167,14 @@ ActiveRecord::Schema.define(version: 20161126015123) do
     t.integer  "zone_members_count", default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "stories", force: :cascade do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_foreign_key "spree_adjustments", "spree_orders", column: "order_id", name: "fk_spree_adjustments_order_id", on_update: :restrict, on_delete: :restrict
