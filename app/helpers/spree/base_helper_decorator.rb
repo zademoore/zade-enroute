@@ -12,7 +12,6 @@ module Spree::BaseHelper
         css_class = 'full'
       end
       
-      text = "<i class='fa fa-shopping-cart'></i>"
       link_to text.html_safe, spree.cart_path, class: "cart-info #{css_class}"
     end
   
