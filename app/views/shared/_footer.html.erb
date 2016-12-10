@@ -1,19 +1,36 @@
 <section class="footer diag">
     <div class="rapper elastagirl">
-        <div class="logo-foot foot">
-     
+        <div class="foot-2">
+             <ul class="foot-nav">
+                 <li><%= link_to 'home', main_app.root_path %></li>
+                 <li><%= link_to 'about', main_app.about_index_path %></li>
+                 <li><%= link_to 'blog', main_app.stories_path %></li>
+                 <li><%= link_to 'shop', spree.root_path %></li>
+                 <li><%= link_to 'lookbook', main_app.lookbook_index_path %></li>
+             </ul>
         </div>
-        <div class="social-foot foot">
-            <ul class="foot-social">
-                <li><a href="https://www.linkedin.com/in/zadé-moore-54678b101" target="blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://www.instagram.com/zademoore/" target="blank"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="https://www.behance.net/zademoore" target="blank"><i class="fa fa-behance"></i></a></li>
-            </ul>
+        <div class="foot-2">
+            <div class="column-flex">
+                <ul class="foot-social">
+                    <li><a href="https://www.linkedin.com/in/zadé-moore-54678b101" target="blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/zademoore/" target="blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.behance.net/zademoore" target="blank"><i class="fa fa-behance"></i></a></li>
+                </ul>
+                
+                <%= link_to root_path, class: 'foot-logo' do %>
+                    <%= image_tag 'Zadé-001.svg' %>
+                <% end %>
+            </div>
+
         </div>
-        <div class="copy-foot foot">
-            <%= link_to root_path do %>
-                <%= image_tag 'Zadé-001.svg', class: 'foot-logo' %><p>&copy;2016</p>
-            <% end %> 
+        <div class="foot">
+            <div class="column-flex">
+                <div class="contact-box">
+                    <a href="#" class="contact-button">
+                        contact me
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </section>

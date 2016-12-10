@@ -1,49 +1,71 @@
 section.footer {
     background-color: #000;
-    color: #fff;
-    height: 180px;
+    color: #F7F7F7;
     margin-bottom: 0;
-    font-size: 14px;
-    padding-top: 0.3em;
+    font-size: 18px;
+    padding-top: 1em;
 }
 
 .foot {
-    width: 33.333%;
+    display: inline-block;
+    width: 47%;
+}
+
+.foot-2 {
+    display: inline-block;
+    width: 39%;
+}
+
+.footer a {
+    color: #F7F7F7;
+}
+
+.foot-nav li {
+    margin-top: 1em;
 }
 
 .foot-logo {
-    height: 4em;
+    display: block;
+    text-align: center;
 }
 
-.copy-foot {
-    text-align: right;
+.foot-logo img{
+    height: 3.6em;
 }
 
-.copy-foot a {
-    position: relative;
-    top: 1.6em;
+.right-box {    text-align: right;    }
+
+.copy {
+    font-size: 7px;
 }
 
-.copy-foot p {
-    position: relative;
-    right: -11px;
-    top: -26px;
-    font-size: .6em;
+.column-flex {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
 }
 
 ul.foot-social {
     text-align: center;
-}
-
-.footer a {
-    color: #fff;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 4em;
 }
 
 .foot-social li {
     display: inline-block;
-    margin: 0 1.6em;
+    float: left;
+    width: 33.333%;
 }
 
 .foot-social li a i {
-    font-size: 1.5em;
+    font-size: 1.3em;
+}
+
+.contact-button {
+    padding: 15px 23px;
+    border: 1px solid #F7F7F7;
+    float: right;
+    margin-top: 5.5em;
 }
