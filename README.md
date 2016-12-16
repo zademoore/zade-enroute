@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+ruby 2.3.0
 
-* System dependencies
+rails 5
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is an ecommerce application using the solidus stack. The app uses their 
+functionallity and my own custom layouts. Some feautures to be added are a simple
+blog, and an image uploader for the "lookbook" section.
