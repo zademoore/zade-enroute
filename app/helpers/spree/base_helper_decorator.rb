@@ -8,7 +8,7 @@ module Spree::BaseHelper
         text = "<i class='fa fa-shopping-cart'></i>: (#{Spree.t(:empty)})"
         css_class = 'empty'
       else
-        text = "<i class='fa fa-shopping-cart'></i>: (#{simple_current_order.item_count})  <span class='amount'>#{simple_current_order.display_total.to_html}</span>"
+        text = "<i class='fa fa-shopping-cart'></i>: (#{simple_current_order.item_count})"
         css_class = 'full'
       end
       

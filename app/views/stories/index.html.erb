@@ -1,9 +1,18 @@
 <%= render :partial => 'spree/shared/header' %>
 <section class="about diag">
     <h1>blog</h1>
+
+    <%= link_to new_story_path, remote: true do %>
+        <button class="modal-trigger">New Story</i></button>
+    <% end %>
     
-    <div class="undev" style="text-align:center; display:block; margin: 0 auto; margin-top:3em;">
-        <h3>This page is in development... check back soon and see what's news! ;)</h3>
-    </div>
+    <% @story.each do |story| %>
+        <%= link_to story, class: 'story-link' do %>
+            <div class="blog-post">  
+                <h3><%= story.title %></h3>
+            </div> 
+        <% end %>
+    <% end %>
+        
     
 </section>

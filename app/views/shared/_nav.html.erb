@@ -23,6 +23,9 @@
             <li><%= link_to 'lookbook', main_app.lookbook_index_path %></li>
         </ul>
     </div>
+    <ul class="login">
+        <%= render :partial=> 'spree/shared/login_bar' %>
+    </ul>
     <ul class="cart">
         <li id="link-to-cart" data-hook>
             <noscript>
@@ -32,4 +35,5 @@
         </li>
         <script>Spree.fetch_cart('<%= j spree.cart_link_url %>')</script>
     </ul>
+
 </nav>
