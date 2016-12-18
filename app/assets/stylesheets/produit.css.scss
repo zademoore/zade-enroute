@@ -18,6 +18,12 @@
     width: 100%;
 }
 
+.le-produit:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
 .produit-link {
     position: absolute;
     height: 100%;

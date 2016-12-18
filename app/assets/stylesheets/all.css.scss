@@ -1,4 +1,5 @@
-
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 .clearfix:after {
     visibility: hidden;
@@ -75,9 +76,14 @@ p {
     line-height: 40px;
 }
 
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 li { list-style: none; }
 
-a { 
+a, a:hover { 
     text-decoration: none; 
     color: #000;
 }
@@ -147,14 +153,14 @@ section.header {
 
 section.diag h1 {
     position: absolute;
-    top: -1.45em;
+    top: -1.4em;
     color: #F7F7F7;
     font-size: 404%;
     left: 1em;
 }
 
 section.diag.slope-right h1 {
-    top: -1.2em;
+    top: -1.12em;
 }
 
 .elastagirl {

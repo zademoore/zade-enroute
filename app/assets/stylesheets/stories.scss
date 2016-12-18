@@ -1,3 +1,24 @@
 // Place all the styles related to the Stories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.blog-container {
+    max-width: 1017px;
+    margin: 0 auto;
+    display: block;
+}
+
+.post-contain {
+    display: block;
+}
+
+.post-image {
+  width: 35%;
+  background-color: #e0e0e0;
+}
+
+.post-image:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}

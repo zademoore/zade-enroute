@@ -87,11 +87,11 @@ ul.taxons-list li {
 .nav-links li a:after{
     content: '';
     display: block;
-    height: 2px;
+    height: 1px;
     width: 70%;
     background: transparent;
     position: absolute;
-    bottom: -1px;
+    bottom: 1px;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
@@ -110,4 +110,9 @@ ul.taxons-list li {
 
 li#link-to-login {
     text-align: right;
+}
+
+ul.login li {
+    float: right;
+    margin-left: 20px;
 }

@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'font-awesome-sass', '~> 4.6.2'
 
+gem 'bootstrap-sass', '~> 3.3.6'
+
 gem 'solidus'
 gem 'solidus_auth_devise'
 
