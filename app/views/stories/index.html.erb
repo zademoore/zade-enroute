@@ -1,24 +1,28 @@
 <%= render :partial => 'spree/shared/header' %>
 <section class="about diag">
+    
     <h1>blog</h1>
-    <% if admin_spree_user_signed_in? %>
+ 
+    <div class="container">
         <%= link_to new_story_path, remote: true do %>
             <button class="modal-trigger">New Story</i></button>
         <% end %>
-    <% end %>
+    </div>
     
-    <div class="blog-container">
+    
+    
+    <div class="container">
     <% @story.each do |story| %>
-        <div class="post-contain">
+        <div class="post-contain row">
             <%= link_to story, class: 'story-link' do %>
                 <article class="post"> 
-                    <div class="post-date">
+                    <div class="post-date col-sm-2">
                         today
                     </div>
-                    <div class="post-image">
+                    <div class="post-image col-sm-4">
                     
                     </div>
-                    <div class="post-title">
+                    <div class="post-title col-sm-4">
                         <h3><%= story.title %></h3>
                     </div>
                 </article> 

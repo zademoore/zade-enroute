@@ -35,6 +35,15 @@ div {
     display: inline-block;
 }
 
+div.container {
+    display: block;
+    margin-bottom: 2em;
+}
+
+div.row {
+    display: block;
+}
+
 .wrapper {
     overflow-x: hidden;
     position: relative;
@@ -54,6 +63,7 @@ h3 {
     font-family: League Spartan;
     text-transform: uppercase;
     display: inline-block;
+    margin-top: 0;
 }
 
 h1 {

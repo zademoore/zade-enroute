@@ -2,19 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.blog-container {
-    max-width: 1017px;
-    margin: 0 auto;
-    display: block;
-}
 
 .post-contain {
     display: block;
+    margin-bottom: 7em;
+}
+
+.post-date {
+  text-align: center;
+}
+
+.post-date:before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 75%;
+  background-color: #000;
+  margin: 0 auto;
+  margin-bottom: 1em;
 }
 
 .post-image {
   width: 35%;
   background-color: #e0e0e0;
+  padding: 0;
 }
 
 .post-image:after {

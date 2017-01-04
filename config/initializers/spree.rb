@@ -53,6 +53,7 @@ Spree.config do |config|
   # )
 end
 
+
 Spree::Frontend::Config.configure do |config|
   config.use_static_preferences!
 
@@ -72,3 +73,6 @@ Spree::Api::Config.configure do |config|
 end
 
 Spree.user_class = "Spree::LegacyUser"
+
+
+
